@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8885679-df46-4bd2-bdd6-0958e998406d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.643209">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#5658#5663#0" expanded="true" />
+                    <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#16478#16483#0" expanded="true" />
+                    <element signature="e#16586#16592#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="298" column="1" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
+                  <folding>
+                    <marker date="1553780720026" expanded="true" signature="8385:8426" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/responsive.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;img class=&quot;team__photo&quot; src=&quot;images/member1.png&quot; alt=&quot;Semf Ucuc&quot;&gt;</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/css/responsive.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="834" />
+    <option name="height" value="974" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="favicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tajem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tajem" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="owlcarousel" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8885679-df46-4bd2-bdd6-0958e998406d" name="Default Changelist" comment="" />
+      <created>1552565579187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552565579187</updated>
+      <workItem from="1552565580624" duration="1210000" />
+      <workItem from="1552567356600" duration="1606000" />
+      <workItem from="1552569308291" duration="1184000" />
+      <workItem from="1552571118455" duration="1085000" />
+      <workItem from="1552572930027" duration="1077000" />
+      <workItem from="1552574738812" duration="1237000" />
+      <workItem from="1552576547390" duration="1536000" />
+      <workItem from="1552578363838" duration="1246000" />
+      <workItem from="1552580176272" duration="465000" />
+      <workItem from="1552584508460" duration="1588000" />
+      <workItem from="1552592025945" duration="263000" />
+      <workItem from="1552637280781" duration="1468000" />
+      <workItem from="1552639129911" duration="1269000" />
+      <workItem from="1552640751381" duration="27000" />
+      <workItem from="1552645425050" duration="1619000" />
+      <workItem from="1552651331171" duration="1515000" />
+      <workItem from="1552653270621" duration="1443000" />
+      <workItem from="1552655120432" duration="1143000" />
+      <workItem from="1552656954186" duration="1432000" />
+      <workItem from="1552659211171" duration="1238000" />
+      <workItem from="1552661040470" duration="1544000" />
+      <workItem from="1552662851786" duration="1554000" />
+      <workItem from="1552664664127" duration="517000" />
+      <workItem from="1552666471472" duration="1319000" />
+      <workItem from="1552668344438" duration="462000" />
+      <workItem from="1552674670261" duration="1588000" />
+      <workItem from="1552676987078" duration="1689000" />
+      <workItem from="1552678804123" duration="1739000" />
+      <workItem from="1552680786927" duration="295000" />
+      <workItem from="1552723760285" duration="1762000" />
+      <workItem from="1552725568202" duration="1509000" />
+      <workItem from="1552727381567" duration="878000" />
+      <workItem from="1552728765268" duration="1470000" />
+      <workItem from="1552730663970" duration="1222000" />
+      <workItem from="1552732510275" duration="829000" />
+      <workItem from="1552734346158" duration="1735000" />
+      <workItem from="1552736155178" duration="386000" />
+      <workItem from="1552738099086" duration="1035000" />
+      <workItem from="1552739910887" duration="1456000" />
+      <workItem from="1552741756144" duration="1210000" />
+      <workItem from="1552743774691" duration="616000" />
+      <workItem from="1552745597188" duration="1358000" />
+      <workItem from="1552747422470" duration="1541000" />
+      <workItem from="1552755054134" duration="823000" />
+      <workItem from="1552756882631" duration="347000" />
+      <workItem from="1552903730931" duration="287000" />
+      <workItem from="1552904075373" duration="212000" />
+      <workItem from="1552908125198" duration="1437000" />
+      <workItem from="1552914618238" duration="1152000" />
+      <workItem from="1552916448008" duration="1100000" />
+      <workItem from="1552918377904" duration="1559000" />
+      <workItem from="1552921176670" duration="1107000" />
+      <workItem from="1552923077722" duration="1521000" />
+      <workItem from="1552924891384" duration="909000" />
+      <workItem from="1552991442523" duration="312000" />
+      <workItem from="1552993672061" duration="1491000" />
+      <workItem from="1552995478642" duration="1818000" />
+      <workItem from="1553000027299" duration="1597000" />
+      <workItem from="1553001836742" duration="1573000" />
+      <workItem from="1553003648847" duration="1503000" />
+      <workItem from="1553005467913" duration="1174000" />
+      <workItem from="1553007303851" duration="795000" />
+      <workItem from="1553009113116" duration="726000" />
+      <workItem from="1553077005205" duration="1344000" />
+      <workItem from="1553078819490" duration="3000" />
+      <workItem from="1553080143238" duration="2083000" />
+      <workItem from="1553082372601" duration="1677000" />
+      <workItem from="1553094847034" duration="822000" />
+      <workItem from="1553096667233" duration="1361000" />
+      <workItem from="1553098728693" duration="1658000" />
+      <workItem from="1553252019686" duration="849000" />
+      <workItem from="1553255670972" duration="707000" />
+      <workItem from="1553257733581" duration="1413000" />
+      <workItem from="1553259540740" duration="502000" />
+      <workItem from="1553261376703" duration="1513000" />
+      <workItem from="1553263329944" duration="903000" />
+      <workItem from="1553267945552" duration="737000" />
+      <workItem from="1553323819659" duration="1022000" />
+      <workItem from="1553513648904" duration="1399000" />
+      <workItem from="1553516778527" duration="1063000" />
+      <workItem from="1553518687433" duration="168000" />
+      <workItem from="1553526395947" duration="1042000" />
+      <workItem from="1553528334704" duration="908000" />
+      <workItem from="1553530532869" duration="1007000" />
+      <workItem from="1553599822148" duration="1486000" />
+      <workItem from="1553601889029" duration="1303000" />
+      <workItem from="1553603709198" duration="1091000" />
+      <workItem from="1553607210211" duration="242000" />
+      <workItem from="1553608617511" duration="968000" />
+      <workItem from="1553611378277" duration="840000" />
+      <workItem from="1553613186085" duration="460000" />
+      <workItem from="1553615316405" duration="1762000" />
+      <workItem from="1553617125560" duration="1474000" />
+      <workItem from="1553618936093" duration="443000" />
+      <workItem from="1553626563618" duration="23000" />
+      <workItem from="1553677086783" duration="1646000" />
+      <workItem from="1553678883735" duration="1443000" />
+      <workItem from="1553680705229" duration="1590000" />
+      <workItem from="1553682831823" duration="1073000" />
+      <workItem from="1553687233696" duration="16000" />
+      <workItem from="1553687427907" duration="26868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="137717000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.39498433" visible="true" weight="0.14345992" />
+      <window_info id="Structure" order="1" sideWeight="0.6050157" side_tool="true" visible="true" weight="0.14345992" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3291536" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../First project/Layout/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/sectional.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="298" column="1" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
+          <folding>
+            <marker date="1553780720026" expanded="true" signature="8385:8426" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#5658#5663#0" expanded="true" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#16478#16483#0" expanded="true" />
+            <element signature="e#16586#16592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
