@@ -1,0 +1,50 @@
+/* Main stiles */
+.miniSlider1 {
+	position: relative;
+	padding-top: 22.4vh;
+}
+
+.miniSlider__stage {
+	overflow: hidden;
+}
+
+.miniSlider__wrapper {
+	display: flex;
+	transition: transform .6s ease; /* 0.6 slide change duration  */
+}
+.miniSlider__item {
+	flex: 0 0 100%; /* number of active slides */
+	max-width: 100%;
+	text-align: center;
+}
+
+
+/* Dots */
+.miniSlider__dots {
+	display: block;
+	/*position: absolute;*/
+	text-align: center;
+	margin-top: 9rem;
+
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	z-index: 1000;
+}
+.miniSlider__dot {
+	width: 5px;
+	height: 15px;
+	margin: 0 3px;
+
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+}
+.miniSlider__dot.active {
+	background: #00e0d0;
+	border-color: #00e0d0;
+}
+.miniSlider__dot:focus {
+	outline: none;
+}

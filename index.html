@@ -6,16 +6,19 @@
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tajem</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link
 		href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900"
 		rel="stylesheet">
 	<link rel="icon" href="images/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.ico">
 	<link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/miniSlider.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="page">
+
 <div class="page__row back back1">
 	<div class="page__overlay">
 		<div class="page__cell">
@@ -27,70 +30,77 @@
 					</div>
 					<nav class="nav">
 						<div class="nav_btn">
-							<button data-target="#nav-main" data-headline="#main-headline" type="button" class="btn-nav">
+							<button data-action="navButton" type="button" class="btn-nav">
 								<span class="btn-nav__line"></span>
 								<span class="btn-nav__line"></span>
 								<span class="btn-nav__line"></span>
 							</button>
 						</div>
 						<ul class="header__menu" id="nav-main">
+<!--							<li>-->
+<!--								<a href="#" class="header__menu__item link">home</a>-->
+<!--							</li>-->
 							<li>
-								<a href="#" class="header__menu__item link">home</a>
+								<a href="#" class="header__menu__item link" data-scroll="#about">about</a>
 							</li>
 							<li>
-								<a href="#" class="header__menu__item link">about</a>
+								<a href="#" class="header__menu__item link" data-scroll="#expertise">expertise</a>
 							</li>
 							<li>
-								<a href="#" class="header__menu__item link">expertise</a>
+								<a href="#" class="header__menu__item link" data-scroll="#teams">teams</a>
 							</li>
 							<li>
-								<a href="#" class="header__menu__item link">teams</a>
+								<a href="#" class="header__menu__item link" data-scroll="#works">works</a>
 							</li>
 							<li>
-								<a href="#" class="header__menu__item link">works</a>
+								<a href="#" class="header__menu__item link" data-scroll="#review">people say</a>
 							</li>
 							<li>
-								<a href="#" class="header__menu__item link">people say</a>
-							</li>
-							<li>
-								<a href="#" class="header__menu__item link">contact</a>
+								<a href="#" class="header__menu__item link" data-scroll="#contact">contact</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
-			<div class="owl-carousel slider" id="main-headline">
-				<div class="slider__item">
-					<h1>We Are Awesome Creative Agency</h1>
-					<span class="separate"></span>
-					<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-						aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-						id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					<button class="button">learn more</button>
-				</div>
-				<div class="slider__item">
-					<h1>We Are Awesome Creative Agency</h1>
-					<span class="separate"></span>
-					<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-						aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-						id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					<button class="button">learn more</button>
-				</div>
-				<div class="slider__item">
-					<h1>We Are Awesome Creative Agency</h1>
-					<span class="separate"></span>
-					<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-						aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-						id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					<button class="button">learn more</button>
-				</div>
-				<div class="slider__item">
-					<h1>We Are Awesome Creative Agency</h1>
-					<span class="separate"></span>
-					<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-						aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-						id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					<button class="button">learn more</button>
+			<div class="miniSlider1">
+				<div class="miniSlider__stage">
+					<div class="miniSlider__wrapper">
+						<div class="miniSlider__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<span class="separate"></span>
+							<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+								aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+								id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<button class="button">learn more</button>
+						</div>
+
+						<div class="miniSlider__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<span class="separate"></span>
+							<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+								aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+								id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<button class="button">learn more</button>
+						</div>
+
+						<div class="miniSlider__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<span class="separate"></span>
+							<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+								aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+								id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<button class="button">learn more</button>
+						</div>
+
+						<div class="miniSlider__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<span class="separate"></span>
+							<p class="slider-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+								aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+								id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<button class="button">learn more</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -98,9 +108,9 @@
 </div>
 
 
-<div class="page__row">
+<div class="page__row" id="about">
 	<div class="page__cell">
-		<div class="our-story">
+		<div class="our-story" >
 			<div class="our-story__logo">
 				<img src="images/Big logo.png" alt="big logo" width="235" height="229">
 			</div>
@@ -134,7 +144,7 @@
 </div>
 
 
-<div class="page__row">
+<div class="page__row" id="expertise">
 	<div class="page__cell">
 		<div class="expertise">
 			<div class="typical-header">
@@ -185,7 +195,7 @@
 </div>
 
 
-<div class="page__row back back3">
+<div class="page__row back back3" id="teams">
 	<div class="overlay overlay--team">
 		<div class="page__cell">
 			<div class="team">
@@ -242,7 +252,7 @@
 </div>
 
 
-<div class="page__row">
+<div class="page__row" id="works">
 	<div class="our-works">
 		<div class="page__cell our-works__header">
 			<h2 class="our-works__headline">Our works</h2>
@@ -270,7 +280,7 @@
 </div>
 
 
-<div class="page__row back back4">
+<div class="page__row back back4" id="review">
 	<div class="page__overlay--review">
 		<div class="page__cell">
 			<div class="review">
@@ -351,7 +361,7 @@
 </div>
 
 
-<div class="page__row back back5">
+<div class="page__row back back5" id="contact">
 	<div class="page__overlay--footer">
 		<div class="page__cell">
 			<div class="footer">
@@ -410,8 +420,17 @@
 	</div>
 
 </div>
+
+<a class="up-arrow hide">
+	<i class="far fa-arrow-alt-circle-up show"></i>
+	<i class="fas fa-arrow-alt-circle-up hide"></i>
+</a>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+<script src="lib/miniSlider.js"></script>
+<script src="lib/smoothscroll.min.js"></script>
+
 </body>
 </html>
