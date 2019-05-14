@@ -1,20 +1,6 @@
-$(document).ready(function () {
-	$(".owl-carousel").owlCarousel({
-		items: 1,
-		loop: true,
-		autoplay: true,
-		autoplayTimeout: 3000
-	});
-//
-// 	$(".btn-nav").on("click", function () {
-// 		let target = $(this).data("target");
-// 		let headline = $(this).data("headline");
-// 		$(headline).toggleClass("main-headline");
-// 		$(target).toggleClass("header__menu--open")
-// 	})
-});
-
 window.onload = function () {
+	let modalForVideo = document.querySelector('.modalForVideo'),
+		player;
 
 	// Class Intro to get Intro params
 	class Intro {
@@ -232,6 +218,7 @@ window.onload = function () {
 			case "Esc": // IE/Edge specific value
 			case "Escape":
 				modal.modalClose();
+				closeModal();
 				break;
 			default:
 				return; // Quit when this doesn't handle the key event.
@@ -256,6 +243,67 @@ window.onload = function () {
 	}
 
 	upArrow();
+
+
+	document.querySelector('.video__picture').addEventListener('click', (evt) => {
+		evt.preventDefault(); 
+		let target = evt.target;
+		while (!target.classList.contains('play-video') ){
+			const id = target.getAttribute('data-url');
+			if (id) {
+				loadVideo(id);
+				openModal();
+			}
+			target = target.parentElement;
+		}
+	});
+
+
+	// open modal window
+	function openModal() {
+		modalForVideo.style.display = 'block';
+	}
+
+
+	// close modal window and stop video
+	function closeModal() {
+		modalForVideo.style.display = 'none';
+		player.stopVideo();
+	}
+
+
+	// close the modal window if you click outside
+	modalForVideo.addEventListener('click', (evt) => {
+		if (!evt.target.classList.contains('modalForVideo__body')) {
+			closeModal();
+		}
+	});
+
+	// copy point 2 from YouTube Player API
+	function createVideo() {
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api"; // direct link into crs tag
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		setTimeout(() => {
+			player = new YT.Player('frame', {
+				height: '100%',
+				width: '100%',
+				videoId: 'VTy1hhZ5uWo',
+			});
+		}, 300);
+	}
+
+	createVideo();
+
+	/* method for downloading videos from YouTube. This method is from YouTube Player API
+	(use not to create a new pleer every time, but simply download new video into it) */
+	function loadVideo(id) {
+		player.loadVideoById({ 'videoId': `${id}` });
+	}
+
 
 
 	let miniSlider1 = multiItemSlider('.miniSlider1', {

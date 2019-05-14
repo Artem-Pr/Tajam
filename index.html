@@ -133,7 +133,7 @@
 	<div class="page__overlay video">
 		<div class="page__cell">
 			<div class="play-video">
-				<div class="video__picture">
+				<div class="video__picture" data-url="VTy1hhZ5uWo">
 					<img class="video__picture__part1" src="images/play-part1.png" alt="" width="37" height="45">
 					<img class="video__picture__part2" src="images/play-part2.png" alt="" width="100" height="100">
 				</div>
@@ -470,8 +470,12 @@
 	<button data-action="nextImage" class="modal__btn modal__btn--right"></button>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<div class="modalForVideo">
+	<div id='frame' class="modalForVideo__body"></div>
+</div>
+
+<!-- attach Google Data API -->
+<script src="https://apis.google.com/js/api.js"></script> 
 <script src="js/script.js"></script>
 <script src="lib/miniSlider.js"></script>
 <script src="lib/smoothscroll.min.js"></script>
