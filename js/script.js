@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	$(".owl-carousel").owlCarousel({
 		items: 1,
 		loop: true,
@@ -59,14 +59,14 @@ window.onload = function () {
 		}
 
 		fixHeader(windowOffset) {
-			let offset = Intro.getHeight()/2;
+			let offset = Intro.getHeight() / 2;
 			if (windowOffset >= offset) this.removeClassHide();
 			else this.addClassHide();
 		}
 	}
 
 
-
+	// Class HeaderTop shows, hides nav menu and implements smooth scrolling
 	class HeaderTop {
 		constructor() {
 			this.headerElem = document.querySelector('.header__top');
@@ -74,7 +74,7 @@ window.onload = function () {
 		}
 
 		getHeaderMenu() {
-			return  this.headerElem.querySelector('.header__menu');
+			return this.headerElem.querySelector('.header__menu');
 		}
 
 		navButton() {
@@ -104,9 +104,142 @@ window.onload = function () {
 
 	}
 
+
+	class Gallery {
+		constructor() {
+			this.gallery = document.querySelector('.our-works__gallery');
+			this.gallery.addEventListener('click', this.onClick.bind(this));
+		}
+
+		onClick(evt) {
+			evt.preventDefault();
+			this.target = evt.target;
+			if (this.target.classList.contains('our-works__overlay')) {
+				modal.showPicture(this.target);
+			}
+		}
+
+		nextTarget() {
+			let parent = this.target.parentElement;
+			if (parent.nextElementSibling)
+				this.target = parent.nextElementSibling.querySelector('.our-works__overlay');
+			else this.target = parent.parentElement.firstElementChild.querySelector('.our-works__overlay');
+			modal.imgLoad(this.target);
+		}
+
+		previousTarget() {
+			let parent = this.target.parentElement;
+			if (parent.previousElementSibling)
+				this.target = parent.previousElementSibling.querySelector('.our-works__overlay');
+			else this.target = parent.parentElement.lastElementChild.querySelector('.our-works__overlay');
+			modal.imgLoad(this.target);
+		}
+	}
+
+
+	class Modal {
+		constructor() {
+			this.modal = document.querySelector('.modal');
+			this.modalBody = this.modal.querySelector('.modal__body');
+			this.modalImg = this.modalBody.querySelector('img');
+			this.modal.addEventListener('click', this.onClick.bind(this));
+			this.heightIndent = 100;
+		}
+
+		nextImage() {
+			gallery.nextTarget();
+		}
+
+		previousImage() {
+			gallery.previousTarget();
+		}
+
+		modalClose() {
+			this.modal.style.display = "none";
+			this.modalImg.src = '#';
+			this.modal.style.opacity = "0";
+		}
+
+		onClick(evt) {
+			evt.preventDefault();
+			let target = evt.target;
+			let dataAction = target.dataset.action;
+			if (dataAction) this[dataAction]();
+		}
+
+		maxHeight() {
+			return this.modal.clientHeight - this.heightIndent;
+		}
+
+		modalBodyHeight() {
+			return this.modalBody.clientWidth / 1.5;
+		}
+
+		showPicture(galleryTarget) {
+			this.modal.style.display = "block";
+
+			if (this.modalBodyHeight() > this.maxHeight()) {
+				this.modalBody.style.height = `${this.maxHeight()}px`;
+				this.modalBody.style.width = `${this.maxHeight() * 1.5}px`;
+			} else this.modalBody.style.height = `${this.modalBodyHeight()}px`;
+
+			this.imgLoad(galleryTarget);
+		}
+
+		imgLoad(galleryTarget) {
+			this.modalImg.style.opacity = '0';
+			this.modalImg.src = galleryTarget.getAttribute('data-url');
+			setTimeout(() => {
+				let imgProportion = this.modalImg.naturalWidth / this.modalImg.naturalHeight,
+					modalProportion = this.modalBody.clientWidth / this.modalBody.clientHeight;
+
+				if (imgProportion > modalProportion) {
+					this.modalImg.style.width = `${this.modalBody.clientWidth}px`;
+					this.modalImg.style.height = `auto`;
+				} else {
+					this.modalImg.style.height = `${this.modalBody.clientHeight}px`;
+					this.modalImg.style.width = `auto`;
+				}
+
+				this.modal.style.opacity = "1";
+				this.modalImg.style.opacity = '1';
+			}, 0);
+		}
+	}
+
+
+	let gallery = new Gallery();
+	let modal = new Modal();
 	new WindowElem();
 	new UpArrow();
 	new HeaderTop();
+
+
+	window.addEventListener("keydown", function (event) {
+		if (event.defaultPrevented) {
+			return; // Do nothing if the event was already processed
+		}
+
+		switch (event.key) {
+			case "Left": // IE/Edge specific value
+			case "ArrowLeft":
+				modal.previousImage();
+				break;
+			case "Right": // IE/Edge specific value
+			case "ArrowRight":
+				modal.nextImage();
+				break;
+			case "Esc": // IE/Edge specific value
+			case "Escape":
+				modal.modalClose();
+				break;
+			default:
+				return; // Quit when this doesn't handle the key event.
+		}
+
+		// Cancel the default action to avoid it being handled twice
+		event.preventDefault();
+	}, true);
 
 
 	function upArrow() {

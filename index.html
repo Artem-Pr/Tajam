@@ -262,18 +262,54 @@
 			</a>
 		</div>
 		<div class="our-works__gallery">
-			<a class="our-works__picture" href="#"><img src="images/pictures/4214.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/7380.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/8373.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/9335.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/10981.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/11564.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/37262.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/37959.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/40756.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/40772.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/40779.jpg" alt=""></a>
-			<a class="our-works__picture" href="#"><img src="images/pictures/40781.jpg" alt=""></a>
+			<a class="our-works__picture" href="#">
+				<img src="images/pictures/4214-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/4214.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/7380.jpg" href="#">
+				<img src="images/pictures/7380-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/7380.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/8373.jpg" href="#">
+				<img src="images/pictures/8373-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/8373.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/9335.jpg" href="#">
+				<img src="images/pictures/9335-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/9335.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/10981.jpg" href="#">
+				<img src="images/pictures/10981-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/10981.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/11564.jpg" href="#">
+				<img src="images/pictures/11564-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/11564.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/37262.jpg" href="#">
+				<img src="images/pictures/37262-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/37262.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/37959.jpg" href="#">
+				<img src="images/pictures/37959-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/37959.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/40756.jpg" href="#">
+				<img src="images/pictures/40756-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/40756.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/40772.jpg" href="#">
+				<img src="images/pictures/40772-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/40772.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/40779.jpg" href="#">
+				<img src="images/pictures/40779-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/40779.jpg"></div>
+			</a>
+			<a class="our-works__picture" data-url="images/pictures/BIG/40781.jpg" href="#">
+				<img src="images/pictures/40781-small.jpg" alt="">
+				<div class="our-works__overlay" data-url="images/pictures/BIG/40781.jpg"></div>
+			</a>
 		</div>
 		<button class="our-works__button button">Load more</button>
 	</div>
@@ -425,6 +461,14 @@
 	<i class="far fa-arrow-alt-circle-up show"></i>
 	<i class="fas fa-arrow-alt-circle-up hide"></i>
 </a>
+
+<div data-action="modalClose" class="modal">
+	<div class="modal__body">
+		<img data-action="nextImage" src="#" alt="image">
+	</div>
+	<button data-action="previousImage" class="modal__btn modal__btn--left"></button>
+	<button data-action="nextImage" class="modal__btn modal__btn--right"></button>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
