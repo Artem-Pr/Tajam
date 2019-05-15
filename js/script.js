@@ -1,6 +1,4 @@
 window.onload = function () {
-	let modalForVideo = document.querySelector('.modalForVideo'),
-		player;
 
 	// Class Intro to get Intro params
 	class Intro {
@@ -87,7 +85,6 @@ window.onload = function () {
 				target = target.parentElement;
 			}
 		}
-
 	}
 
 
@@ -123,6 +120,7 @@ window.onload = function () {
 	}
 
 
+	// modal window for the gallery
 	class Modal {
 		constructor() {
 			this.modal = document.querySelector('.modal');
@@ -130,6 +128,14 @@ window.onload = function () {
 			this.modalImg = this.modalBody.querySelector('img');
 			this.modal.addEventListener('click', this.onClick.bind(this));
 			this.heightIndent = 100;
+		}
+
+		// Start one of the class methods: nextImage, previousImage, modalClose
+		onClick(evt) {
+			evt.preventDefault();
+			let target = evt.target;
+			let dataAction = target.dataset.action;
+			if (dataAction) this[dataAction]();
 		}
 
 		nextImage() {
@@ -144,13 +150,6 @@ window.onload = function () {
 			this.modal.style.display = "none";
 			this.modalImg.src = '#';
 			this.modal.style.opacity = "0";
-		}
-
-		onClick(evt) {
-			evt.preventDefault();
-			let target = evt.target;
-			let dataAction = target.dataset.action;
-			if (dataAction) this[dataAction]();
 		}
 
 		maxHeight() {
@@ -194,11 +193,90 @@ window.onload = function () {
 	}
 
 
+	// modal window for video
+	class VideoFrame {
+		constructor() {
+			this.buttonOpen = document.querySelector('.video__picture');
+			this.modalForVideo = document.querySelector('.modalForVideo');
+			this.buttonOpen.addEventListener('click', this.openVideo.bind(this));
+			this.modalForVideo.addEventListener('click', this.closeVideo.bind(this));
+		}
+
+		openVideo(evt) {
+			evt.preventDefault();
+			let target = evt.target;
+			while (!target.classList.contains('play-video')) {
+				const id = target.getAttribute('data-url');
+				if (id) {
+					videoConstructor.loadVideo(id);
+					this.openModal();
+				}
+				target = target.parentElement;
+			}
+		}
+
+		// open modal window
+		openModal() {
+			this.modalForVideo.style.display = 'block';
+			let modalForVideoBody = this.modalForVideo.querySelector('.modalForVideo__body');
+			modalForVideoBody.style.height = `${0.5625 * modalForVideoBody.clientWidth}px`;
+			this.modalForVideo.style.opacity = '1';
+		}
+
+		// close the modal window if you click outside
+		closeVideo(evt) {
+			if (!evt.target.classList.contains('modalForVideo__body')) {
+				this.closeModal();
+			}
+		}
+
+		// close modal window and stop video
+		closeModal() {
+			this.modalForVideo.style.opacity = '0';
+			this.modalForVideo.style.display = 'none';
+			videoConstructor.player.stopVideo();
+		}
+
+	}
+
+	// class to work with YouTube API
+	class WorkWithAPI {
+		constructor() {
+			this.player = 0;
+		}
+
+		// copied point 2 from YouTube Player API
+		createVideo() {
+			let tag = document.createElement('script');
+
+			tag.src = "https://www.youtube.com/iframe_api"; // direct link into crs tag
+			let firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			setTimeout(() => {
+				this.player = new YT.Player('frame', {
+					height: '100%',
+					width: '100%',
+					videoId: 'VTy1hhZ5uWo',
+				});
+			}, 300);
+		}
+
+		/* method for downloading videos from YouTube. This method is from YouTube Player API */
+		loadVideo(id) {
+			this.player.loadVideoById({'videoId': `${id}`});
+		}
+	}
+
+
 	let gallery = new Gallery();
 	let modal = new Modal();
 	new WindowElem();
 	new UpArrow();
 	new HeaderTop();
+	let videoFrame = new VideoFrame();
+	let videoConstructor = new WorkWithAPI();
+	videoConstructor.createVideo();
 
 
 	window.addEventListener("keydown", function (event) {
@@ -218,7 +296,7 @@ window.onload = function () {
 			case "Esc": // IE/Edge specific value
 			case "Escape":
 				modal.modalClose();
-				closeModal();
+				videoFrame.closeModal();
 				break;
 			default:
 				return; // Quit when this doesn't handle the key event.
@@ -229,6 +307,13 @@ window.onload = function () {
 	}, true);
 
 
+	// links for the expertise block are disabled
+	document.querySelector('.expertise__items').addEventListener('click', evt => {
+		evt.preventDefault();
+	});
+
+
+	// Arrow for smooth scrolling up
 	function upArrow() {
 		let arrowObject = document.querySelector('.up-arrow');
 
@@ -243,71 +328,6 @@ window.onload = function () {
 	}
 
 	upArrow();
-
-
-	document.querySelector('.video__picture').addEventListener('click', (evt) => {
-		evt.preventDefault(); 
-		let target = evt.target;
-		while (!target.classList.contains('play-video') ){
-			const id = target.getAttribute('data-url');
-			if (id) {
-				loadVideo(id);
-				openModal();
-			}
-			target = target.parentElement;
-		}
-	});
-
-
-	// open modal window
-	function openModal() {
-		modalForVideo.style.display = 'block';
-	}
-
-
-	// close modal window and stop video
-	function closeModal() {
-		modalForVideo.style.display = 'none';
-		player.stopVideo();
-	}
-
-
-	// close the modal window if you click outside
-	modalForVideo.addEventListener('click', (evt) => {
-		if (!evt.target.classList.contains('modalForVideo__body')) {
-			closeModal();
-		}
-	});
-
-	// copy point 2 from YouTube Player API
-	function createVideo() {
-		var tag = document.createElement('script');
-
-		tag.src = "https://www.youtube.com/iframe_api"; // direct link into crs tag
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-		setTimeout(() => {
-			player = new YT.Player('frame', {
-				height: '100%',
-				width: '100%',
-				videoId: 'VTy1hhZ5uWo',
-			});
-		}, 300);
-	}
-
-	createVideo();
-
-	/* method for downloading videos from YouTube. This method is from YouTube Player API
-	(use not to create a new pleer every time, but simply download new video into it) */
-	function loadVideo(id) {
-		player.loadVideoById({ 'videoId': `${id}` });
-	}
-
-
-	document.querySelector('.expertise__items').addEventListener('click', evt => {
-		evt.preventDefault();
-	});
 
 
 	// slider for Intro
