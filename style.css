@@ -27,7 +27,6 @@ body {
 	font-size: 1rem;
 	line-height: 1.57;
 	margin: 0;
-	overflow: hidden;
 }
 .link {
 	color: white;
@@ -57,15 +56,11 @@ body {
 	color: white;
 	transition: .3s;
 }
-/*:focus {*/
-/*	outline: none;*/
-/*}*/
 h1 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	color: white;
 	font-size: 2.286rem;
-	/*margin-top: 22.4vh;*/
 	margin-bottom: 0;
 	letter-spacing: 0.01rem;
 }
@@ -82,6 +77,7 @@ h2 {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 10px;
+	overflow: hidden;
 }
 .back {
 	background: url(images/forest.jpg) no-repeat center center;
