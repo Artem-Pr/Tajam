@@ -305,6 +305,11 @@ window.onload = function () {
 	}
 
 
+	document.querySelector('.expertise__items').addEventListener('click', evt => {
+		evt.preventDefault();
+	});
+
+
 	// slider for Intro
 	let miniSlider1 = multiItemSlider('.miniSlider1', {
 		isCycling: true,
