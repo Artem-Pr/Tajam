@@ -98,7 +98,7 @@ h2 {
 	bottom: 0;
 	background: url(images/overlay.png) no-repeat center center;
 	background-size: 100% 100%;
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 .header {
 	padding-top: 1.143rem;
@@ -220,7 +220,7 @@ h2 {
 	bottom: 0;
 	background: url(images/overlay2.png) no-repeat center center;
 	background-size: 100% 100%;
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 .play-video {
 	height: 39.29rem;
@@ -321,7 +321,7 @@ h3 {
 .overlay--team {
 	background: url(images/overlay3.png) no-repeat center center;
 	background-size: 100% 100%;
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 .team {
 	text-align: center;
@@ -454,7 +454,8 @@ h3 {
 .page__overlay--review {
 	background: url(images/overlay4.png) no-repeat center center;
 	background-size: 100% 100%;
-	opacity: 0.85;
+	/*color: rgba(0, 0, 0, 0.85);*/
+	/*opacity: 0.85;*/
 }
 .review {
 	text-align: center;
@@ -557,7 +558,7 @@ h3 {
 .page__overlay--footer {
 	background: url(images/overlay5.png) no-repeat center center;
 	background-size: 100% 100%;
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 .footer {
 	padding-bottom: 4rem;

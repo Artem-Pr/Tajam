@@ -3,19 +3,60 @@
 	position: relative;
 	padding-top: 22.4vh;
 }
-
-.miniSlider__stage {
+.miniSlider2 {
+	position: relative;
+	width: 410px;
+	height: 75px;
+	margin: 50px auto 0;
+	padding: 0 50px 0;
+}
+.miniSlider3 {
+	position: relative;
+}
+.miniSlider1 .miniSlider__stage,
+.miniSlider3 .miniSlider__stage {
 	overflow: hidden;
 }
-
+.miniSlider2 .miniSlider__stage {
+	padding: 0 122px 0;
+	overflow: hidden;
+}
 .miniSlider__wrapper {
 	display: flex;
 	transition: transform .6s ease; /* 0.6 slide change duration  */
 }
-.miniSlider__item {
+.miniSlider1 .miniSlider__item,
+.miniSlider2 .miniSlider__item,
+.miniSlider3 .miniSlider__item {
 	flex: 0 0 100%; /* number of active slides */
 	max-width: 100%;
 	text-align: center;
+}
+.miniSlider2 .miniSlider__item {
+	height: 75px;
+	padding: 15px 0 15px;
+}
+.miniSlider3 .miniSlider__item {
+	padding: 0 10px 0;
+	display: flex;
+	flex-direction: column;
+}
+.miniSlider__item > img {
+	height: 100%;
+	object-fit: scale-down;
+	border-radius: 50%;
+	transition: transform .6s ease;
+}
+.miniSlider__item.active > img {
+	transform: scale(1.5, 1.5);
+}
+.miniSlider3 .review__content {
+	margin: auto;
+	padding: 2rem 0 3rem;
+}
+.miniSlider3 .business-card {
+	margin-bottom: 0;
+	margin-top: auto;
 }
 
 
@@ -47,4 +88,39 @@
 }
 .miniSlider__dot:focus {
 	outline: none;
+}
+.miniSlider2 > .miniSlider__dots {
+	display: none;
+}
+
+
+/* Arrows */
+.miniSlider__control {
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	top: 40%;
+	background-color: transparent;
+
+	border-left: none;
+	border-bottom: none;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: translateY(-50%);
+	z-index: 1102;
+	cursor: pointer;
+}
+
+.miniSlider__control:focus {
+	outline: none;
+}
+
+.miniSlider__control_left {
+	left: 5%;
+	transform: rotate(-150grad);
+}
+
+.miniSlider__control_right {
+	right: 5%;
+	transform: rotate(50grad);
 }

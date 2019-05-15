@@ -305,7 +305,7 @@ window.onload = function () {
 	}
 
 
-
+	// slider for Intro
 	let miniSlider1 = multiItemSlider('.miniSlider1', {
 		isCycling: true,
 		dots: true,
@@ -313,5 +313,20 @@ window.onload = function () {
 		pause: false,
 		dotsPause: true
 	});
+
+	// slider for review icons
+	let miniSlider2 = multiItemSlider('.miniSlider2', {
+		isCycling: true,
+		interval: 3000,
+		pause: false,
+		dots: true
+	});
+
+	// slider for review text (it uses arrows from miniSlider2)
+	let miniSlider3 = multiItemSlider('.miniSlider3', {
+		isCycling: true,
+		pause: false,
+		interval: 3000
+	}, '.miniSlider2');
 
 };
