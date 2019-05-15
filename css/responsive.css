@@ -17,7 +17,6 @@
 		right: -12rem;
 		overflow: hidden;
 		padding: 1.3rem 2.5rem .5rem 1rem;
-		/*padding: 1.3rem 0 .5rem 0;*/
 		margin: 0;
 
 		text-align: right;
@@ -35,9 +34,6 @@
 	.nav_btn {
 		display: block;
 		right: -10px;
-	}
-	.main-headline {
-		/*padding-top: 2rem;*/
 	}
 	.slider-content {
 		width: 35rem;
@@ -66,9 +62,6 @@
 	}
 }
 @media screen and (max-width: 500px){
-	.main-headline {
-		/*padding-top: 0;*/
-	}
 	.slider-content {
 		width: 30rem;
 	}
@@ -195,11 +188,6 @@
 	}
 	.header__menu {
 		text-align: center;
-		/*width: 100%;*/
-		/*margin: 2rem 0;*/
-	}
-	.header__menu li {
-		/*width: 30%;*/
 	}
 	h1 {
 		font-size: 1.5rem;
